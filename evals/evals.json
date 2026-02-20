@@ -1,0 +1,68 @@
+{
+  "skill_name": "xplor",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Build me a document intelligence app where I can upload PDFs and see entities extracted as a knowledge graph",
+      "expected_output": "Creates Next.js app with PDF upload, Claude extraction API, force-directed graph Explorer, Firebase persistence",
+      "expectations": [
+        "Creates app/api/extract/route.js with Claude API call",
+        "Creates components/Explorer.js with SVG graph rendering",
+        "Creates components/UploadScreen.js with PDF text extraction",
+        "Uses dark theme with gradient accents",
+        "Implements zoom/pan on the graph canvas"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "I want to build a CLI that indexes a codebase into a knowledge graph and exposes it via MCP for Claude Code",
+      "expected_output": "Creates Node.js CLI with Tree-sitter AST parsing, knowledge graph builder, and MCP server with query/context/impact tools",
+      "expectations": [
+        "Uses commander.js for CLI structure",
+        "Implements Tree-sitter AST parsing for JS/TS/Python",
+        "Extracts CALLS, IMPORTS, EXTENDS, DEFINES relationships",
+        "Creates MCP server with @modelcontextprotocol/sdk",
+        "Includes query, context, and impact tools",
+        "Shows Claude Code configuration example"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Help me build a skill graph system where I can create interconnected markdown files with wikilinks and have AI agents traverse them intelligently",
+      "expected_output": "Creates skill graph pipeline with wikilink parsing, YAML frontmatter extraction, MOC support, progressive disclosure traversal, and attention scoring",
+      "expectations": [
+        "Parses [[wikilinks]] and [[target|alias]] syntax",
+        "Extracts YAML frontmatter with gray-matter",
+        "Supports MOCs (Maps of Content) as entry points",
+        "Implements 5-level progressive disclosure",
+        "Includes attention scoring for path ranking",
+        "Creates xplor skill init/validate/stats CLI commands"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "I want to merge my codebase graph with my company documentation and engineering best practices into one queryable knowledge graph",
+      "expected_output": "Implements multi-domain fusion that merges code, document, and skill graphs with cross-domain edge detection",
+      "expectations": [
+        "Fuses multiple graph types (code + docs + skills)",
+        "Handles ID collision with domain prefixes",
+        "Creates CROSS_DOMAIN edges for matching entity names",
+        "Supports xplor fuse CLI command",
+        "Shows fused graph with domain-colored regions in Explorer"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "Create a therapy skill graph for CBT techniques that an AI agent can traverse",
+      "expected_output": "Scaffolds a CBT skill graph with MOCs, technique nodes, methodology claims, and framework nodes all connected with wikilinks",
+      "expectations": [
+        "Creates index.md as root MOC",
+        "Creates technique nodes (cognitive-reframing, thought-records, etc.)",
+        "Uses YAML frontmatter with name, description, type, domain",
+        "Wikilinks woven into prose (not just link lists)",
+        "Includes cross-domain references where relevant",
+        "Validates with xplor skill validate"
+      ]
+    }
+  ]
+}
